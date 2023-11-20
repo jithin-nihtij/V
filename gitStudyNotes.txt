@@ -1,0 +1,90 @@
+Git is a version control system .
+
+
+
+1.  init : Initializes empty Git repository in the folder
+                creates a hidden .git file
+
+2. add : to move changes from working directory to git
+
+3. commit : it takes a snapshot and commits it to the repository
+
+4.  log : it shows the commits we have done and information about it
+
+5. HEAD : represents the latest commit
+
+6. git reset : Reseting helps to completely remove changes that have not been pushed
+
+7. branch :used to create branch  and to view the current branch that we are using.
+
+8. merge : used to copy feature of one branch to another branch.
+
+9. conflict : Conflict occurs when two branches have made edits to the same line in a file 
+                or a file has been deleted in a branch and edited on the other
+
+10. cherry-pick : to pick a specific commit from a branch and copy to another branch
+
+11. diff : shows what changes are done on which lines before commit.
+
+12. checkout : eg: git checkout HEAD~1 or 
+                this will switch the commit from HEAD to HEAD - 1
+                or 
+                git checkout "commit-id"
+                this will switch the commit to the specified commit id
+
+13. clone : clone is used to collaborate, to share our repository with the collaborators
+
+14. push : to upload the local repository to remote repository.
+
+15. pull : pull is used to download content from a remote repository to local repository 
+
+16. restore: for removing the modifications done before the next commit we can use
+
+        1. git reset --hard 
+        2. git chekout HEAD -f
+        3. git checkout index.html (to restore a specific file) 
+
+17. git branch newBranch : creates a branch called newBranch
+
+18. git checkout newBranch : switches to newBranch
+
+19.git merge newBranch : to merge newBranch to master branch
+
+                            while merging conflict might occur we have to fix it manualy by using add ad commit
+
+20. fetch : to track the changes in server from client
+
+21. fetch and merge together is called pull
+
+
+GitHub
+______
+
+
+GitHub is a cloud service for version control where  we can create a repository and  add and manage our code.
+
+It can be used for collaboration.
+
+
+how to push our folders to GitHub:
+
+    git init
+
+    git add .
+
+    git commit -m "first commit"
+
+    git branch -M master
+
+    git remote add origin "repository-link"
+
+    git push -u origin master
+
+
+pull request : we can send a pull request to the server for pulling our branch into their main branch
+
+* rebase : helps in having linear history
+
+git pull --rebase
+
+
