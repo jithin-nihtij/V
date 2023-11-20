@@ -1,0 +1,169 @@
+1. whoami - to print the user currently logged in
+
+2. man - to get the manual of the commands used 
+            eg:- man pwd (shows the manual for pwd command)
+
+3. clear - clears the terminal section
+
+4. pwd - shows the current directory path
+
+5. ls - shows the files and folders in a directory
+
+6. cd - to change directory from one directory to another
+
+7. mkidir - to create a directory/folder
+            eg: mkdir newFolder
+
+8. touch - to create a file 
+            eg: touch newFile
+
+9. rmdir - to remove an empty folder
+            
+10. rm to remove a file
+        
+        rm -r removes the directory even it is not empty
+
+11. open - lets you open a file or a folder
+
+12. mv - to move a file from one directory to another or 
+            you can use it change the name of the file or directory
+
+            eg: mv index.html newFile.html (to rename)
+
+                mv index.html newFolder/ (to move the file)
+
+13. cp - copy the contents inside a file into another
+
+            eg : cp index.html new.html
+
+14. head - prints out first 10 lines inside a file 
+
+            eg: head index.html
+                head index.html -n 15 (prints 15 lines)
+
+15. tail - prints out last 10 lines inside a file
+
+            eg: tail index.html
+
+16. redirecting standard output (>) : the output of one command can be directed 
+                                        inside a file 
+
+                                        eg: date > newFile.txt
+                                        ">" this replaces the new contents added 
+                                        ">>" this appends the contents added
+
+17. cat : used to concatenate 
+
+18. less : shows the the file contents in an ineractive UI
+
+19. echo : prints the arguement passeed to it 
+            
+            eg:echo "hello"
+                echo "heloo" >> newText.txt
+
+20. wc : gives the information about files like no.of words no.of lines and bytes
+
+21. date : prints out the current date and time
+
+22. sort : to sort contents inside a file
+
+            sort -n (to sort numbers)
+            sort -nr (to sort in reverse)
+
+23. uniq : Also used to sort but it will not show same texts that are adjacent.
+
+24. diff : if you have two files that containts almost the same content ,but you want 
+            to find the difference 
+
+            eg: diff oldText.txt newFile.txt
+
+
+25.find : can be used to find files or folders matching a particular pattern
+
+            eg: find . -name '*.txt' (finds files with .txt extension)
+
+26. grep : global regular user expression print
+            you can use to search inside a file
+
+            eg : grep jithin newfile.txt (finds all jithin inside the file)
+
+27. du : disk usage 
+            calculate the size of a directory as a whole
+
+28. df : used to get the disk usage information
+
+
+29. history : shows all the commands that you have entered till now
+
+                history | grep 'cookie'
+
+                shows the history of commands that used the word cookie
+
+30. ps : prints snapshot of the current process
+ 
+31. top : display and update sorted information about process
+
+32. kill : used to send variety of signals to a program,it is 
+            not just to terminate ,but it is the main job
+
+33. killall : it will send the signal to multiple process at once.
+
+34. jobs : it shows the state of the process whether it is still going on or stopped
+
+35. fg : to run the process in foregroune
+
+36. bg : to run the process in the background
+
+37. gzip : to compress a file
+
+            gzip index.html
+
+38. gunzip : to unzip a gzip file
+
+                gunzip index.html.gz
+
+39. tar : it is used to create an archive,grouping multiple files into single folder
+
+            tar -cf archivedFolder.tar index.html navBar.html (index.html and navBar.html are archived into the archivedFolder )
+ 
+
+40. nano : It opens user friendly editor
+
+            nano index.html
+
+41. xargs : Output of a command can be used as input of another command
+
+42. alias : to define our customc commands
+
+43. ln : links
+            it is a pointer to another file
+            ln original.txt newLink.txt (newLink.txt points to original.txt)
+
+44. who : displays the users logged into the system
+
+45. su : it is used to switch from one user to another
+
+46. sudo : it used to run a command as a root 
+            once you enable sudo you can run command as root by entering user passsword
+
+47. passwd : changes user passsword
+
+48. chown : change ownership from one user to another 
+
+49. chmod : change mode
+
+        eg: -rw-r--r-- 1 jithin jithin 4491 Nov 20 14:10 LinuxStudyNotes.txt
+
+        the first three characters represents owner
+        the next three characters represents group
+        the last three characters represents world
+
+        r - read permission 
+        w - write permission
+        x - execute permission
+
+        chmod o+w LinuxStudyNotes.txt (grants permission to write to the world )
+        
+
+
+
